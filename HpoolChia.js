@@ -50,13 +50,13 @@ async function createWidget(items) {
     // Add spacing below authors.
     w.addSpacer(2)
     // Show date.
-    let dateTxt = w.addText("实时：" + items[0])
+    let dateTxt = w.addText("实时：" + items[0].toFixed(8))
     dateTxt.font = Font.mediumSystemFont(12)
     dateTxt.textColor = Color.white()
     dateTxt.textOpacity = 0.9
     // Add spacing below content to center it vertically.
     w.addSpacer(2)
-    let date2Txt = w.addText("昨日：" + items[2])
+    let date2Txt = w.addText("昨日：" + items[2].toFixed(8))
     date2Txt.font = Font.mediumSystemFont(12)
     date2Txt.textColor = Color.white()
     date2Txt.textOpacity = 0.9
